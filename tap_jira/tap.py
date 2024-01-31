@@ -70,6 +70,7 @@ class TapJira(Tap):
             streams.ProjectStream(self),
             streams.WorkflowStatusStream(self),
             streams.IssueStream(self),
+            streams.IssueByUpdatedAtStream(self),
             streams.PermissionStream(self),
             streams.ProjectRoleStream(self),
             streams.PriorityStream(self),
