@@ -392,7 +392,7 @@ class IssueStream(JiraStream):
     records_jsonpath = "$[issues][*]"  # Or override `parse_response`.
     instance_name = "issues"
 
-    __content_schema = __content_schema = ArrayType(
+    __content_schema = ArrayType(
         ObjectType(
             Property("version", IntegerType),
             Property("text", StringType),
