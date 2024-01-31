@@ -2349,6 +2349,11 @@ class IssueStream(JiraStream):
         return row
 
 
+class IssueByUpdatedAtStream(IssueStream):
+    name = "issue_by_updated_at"
+    replication_key = "updated_at"
+
+
 class PermissionStream(JiraStream):
 
     """
